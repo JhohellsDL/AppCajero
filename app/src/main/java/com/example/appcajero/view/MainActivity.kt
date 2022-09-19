@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
             binding.sum.text = "la suma de lo que ingresate es $suma"
             //comentario 2
+            //comentario 2.1
             //Toast.makeText(this,"la suma de lo que ingresate es $suma",Toast.LENGTH_LONG).show()
         }
     }
