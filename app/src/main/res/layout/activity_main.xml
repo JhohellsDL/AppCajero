@@ -14,15 +14,28 @@
         android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRespuesta" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSumar"
+        app:layout_constraintVertical_bias="0.226"
+        tools:text="la suma: " />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retirar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSumar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSumar"
+        app:layout_constraintTop_toTopOf="@+id/btnSumar" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Cajerod Autdfomatihhhhhhhhhco"
+        android:text="Cajero Automatico"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,34 +53,43 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/num1"
+        android:id="@+id/nro2"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nro1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="balance"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSumar"
+        app:layout_constraintEnd_toStartOf="@+id/btnSumar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSumar" />
 
     <Button
         android:id="@+id/btnSumar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Sumar"
+        android:text="Depositar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nro1" />
 
     <TextView
-        android:id="@+id/txtRespuesta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="La suma ess: "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Dinero:"
+        app:layout_constraintBottom_toBottomOf="@+id/nro1"
+        app:layout_constraintEnd_toStartOf="@+id/nro1"
+        app:layout_constraintTop_toTopOf="@+id/nro1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
