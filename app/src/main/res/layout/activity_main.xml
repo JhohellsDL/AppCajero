@@ -63,7 +63,7 @@
         android:id="@+id/txtRespuesta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="La suma de JDL sin nada!: "
+        android:text="La suma de JDL sin nada2!: "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
