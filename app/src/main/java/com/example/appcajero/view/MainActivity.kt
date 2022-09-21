@@ -14,19 +14,30 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var montoInicial = 0
         var numero: Int
         var numero2: Int
         var suma :Int
+        var resta :Int
 
         binding.btnSumar.setOnClickListener {
             numero = binding.nro1.text.toString().toInt()
-            numero2 = binding.num1.text.toString().toInt()
-            suma = numero + numero2
+            //numero2 = binding.nro2.text.toString().toInt()
+            montoInicial = montoInicial + numero
 
-            binding.sum.text = "la suma de lo que ingresate es $suma"
-            //comentario 2
-            //comentario 2.1
+            binding.sum.text = "dinero actual $montoInicial"
+
             //Toast.makeText(this,"la suma de lo que ingresate es $suma",Toast.LENGTH_LONG).show()
+            //cambios 3
+        }
+        binding.btnRestar.setOnClickListener {
+            numero = binding.nro1.text.toString().toInt()
+            //numero2 = binding.nro2.text.toString().toInt()
+            //resta = numero - numero2
+            montoInicial = montoInicial - numero
+
+            binding.sum.text = "dinero actual $montoInicial"
+
         }
     }
 }
