@@ -27,14 +27,16 @@
         android:text="retirar"
         app:layout_constraintBottom_toBottomOf="@+id/btnSumar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toEndOf="@+id/btnSumar"
-        app:layout_constraintTop_toTopOf="@+id/btnSumar" />
+        app:layout_constraintTop_toTopOf="@+id/btnSumar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:text="Cajero Automatico"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -83,9 +85,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nro1" />
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_attach_money_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:text="Dinero:"
         app:layout_constraintBottom_toBottomOf="@+id/nro1"
         app:layout_constraintEnd_toStartOf="@+id/nro1"
