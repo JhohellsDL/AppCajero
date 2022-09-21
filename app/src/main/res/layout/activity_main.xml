@@ -15,22 +15,33 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRespuesta" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSaldo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Cajerod Autdfomatihhhhhhhhhco"
-        android:textSize="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Cajero Automatico"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/labelCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/etMonto"
+        app:layout_constraintTop_toTopOf="@id/etMonto"
+        app:layout_constraintBottom_toBottomOf="@id/etMonto"/>
+
     <EditText
-        android:id="@+id/nro1"
+        android:id="@+id/etMonto"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -39,35 +50,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/num1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nro1" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_money_green"
+        app:layout_constraintEnd_toStartOf="@+id/labelCantidad"
+        app:layout_constraintTop_toTopOf="@id/etMonto"
+        app:layout_constraintBottom_toBottomOf="@id/etMonto"
+        android:layout_marginEnd="16dp"/>
 
     <Button
-        android:id="@+id/btnSumar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnDesposito"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Sumar"
+        android:layout_marginTop="40dp"
+        android:text="Desposito"
+        app:layout_constraintEnd_toStartOf="@id/btnRetiro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMonto" />
+
+    <Button
+        android:id="@+id/btnRetiro"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Retiro"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDesposito"
+        app:layout_constraintStart_toEndOf="@id/btnDesposito"
+        app:layout_constraintTop_toTopOf="@id/btnDesposito"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="40dp"
+        android:text="Mostrar Saldo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nro1" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDesposito" />
 
     <TextView
-        android:id="@+id/txtRespuesta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="La suma ess: "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSaldo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="tu saldo es 500 soles"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
