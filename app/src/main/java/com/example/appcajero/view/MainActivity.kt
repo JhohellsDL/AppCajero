@@ -18,16 +18,5 @@ class MainActivity : AppCompatActivity() {
         var numero2: Int
         var suma :Int
 
-        binding.btnSumar.setOnClickListener {
-            numero = binding.nro1.text.toString().toInt()
-            numero2 = binding.num1.text.toString().toInt()
-            suma = numero + numero2
-
-            binding.sum.text = "la suma de lo que ingresate es $suma"
-            //Toast.makeText(this,"la suma de lo que ingresate es $suma",Toast.LENGTH_LONG).show()
-            //cambios 3
-
-            //nuevo mcomit 17:19
-        }
     }
 }
