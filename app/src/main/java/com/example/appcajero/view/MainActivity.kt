@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             //numero2 = binding.nro2.text.toString().toInt()
             montoInicial = montoInicial + numero
 
-            binding.sum.text = "dinero actual $montoInicial"
+            //binding.sum.text = "dinero actual $montoInicial"
 
             //Toast.makeText(this,"la suma de lo que ingresate es $suma",Toast.LENGTH_LONG).show()
             //cambios 3
@@ -36,8 +36,11 @@ class MainActivity : AppCompatActivity() {
             //resta = numero - numero2
             montoInicial = montoInicial - numero
 
-            binding.sum.text = "dinero actual $montoInicial"
+            //binding.sum.text = "dinero actual $montoInicial"
 
+        }
+        binding.balance.setOnClickListener {
+            binding.sum.text = "dinero actual $montoInicial"
         }
     }
 }
